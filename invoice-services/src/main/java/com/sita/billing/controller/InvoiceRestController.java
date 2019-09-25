@@ -26,4 +26,13 @@ public class InvoiceRestController {
 	public List<InvoiceBean> getInvoiceByNcc(@RequestParam String ncc){
 		return invoiceService.getInvoiceByNcc(ncc);
 	}
+	
+	@RequestMapping("/invoice")
+	public List<InvoiceBean> getInvoices(@RequestParam String ncc, @RequestParam String fileName, @RequestParam String reportName){
+		InvoiceBean filter = new InvoiceBean();
+		filter.setNcc(ncc);
+		filter.setFileName(fileName);
+		filter.setReportName(reportName);
+		return invoiceService.retrieveEmployees(filter);
+	}
 }

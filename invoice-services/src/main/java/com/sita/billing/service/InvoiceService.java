@@ -8,5 +8,6 @@ public interface InvoiceService {
 	
 	public List<InvoiceBean> getInvoiceByNcc(String ncc);
 	public List<InvoiceBean> getInvoiceList();
+	public List<InvoiceBean> retrieveEmployees(InvoiceBean filter);
 
 }

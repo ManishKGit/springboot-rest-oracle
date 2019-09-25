@@ -17,19 +17,19 @@ public class InvoiceBean {
 	@Column(name="RECORD_ID")
 	private long recordId;
 	
-	@Column(name="FILE_NAME")
+	@Column(name="FILENAME")
 	private String fileName;
 	
-	@Column(name="ACTIVITY_MONTH")
+	@Column(name="ACTIVITYMONTH")
 	private String activityMonth;
 	
-	@Column(name="ACTIVITY_YEAR")
+	@Column(name="ACTIVITYYEAR")
 	private String activityYear;
 	
-	@Column(name="REPORT_CODE")
+	@Column(name="REPORTCODE")
 	private String reportCode;
 	
-	@Column(name="REPORT_CATEGORY")
+	@Column(name="REPORTCATEGORY")
 	private String reportCategory;
 	
 	@Column(name="REPORTNAME")
